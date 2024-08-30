@@ -12,6 +12,7 @@ app.get("/" , (req,res)=>{
     return res.send("Welcome to our backend")
 })
 
+app.use('/users', userRoutes);
 
 
 app.listen(PORT , async()=>{
